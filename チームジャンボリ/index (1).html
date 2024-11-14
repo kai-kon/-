@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devotion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <header class="border-b">
+            <div class="container flex h-16 items-center px-4">
+                <h1 class="title">Devotion</h1>
+            </div>
+        </header>
+        <main class="container grid gap-6 p-4 md:grid-cols-[1fr_300px]">
+            <div class="space-y-6">
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab active" data-tab="notes">授業ノート</button>
+                        <button class="tab contribution" data-tab="contribution">貢献度</button>
+                        <button class="tab chat" data-tab="talk">トーク</button>
+                    </div>
+                    <div class="tab-content active" id="notes">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title">授業内容</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="scroll-area">
+                                    <div class="space-y-4">
+                                        <div class="space-y-2">
+                                            <h3 class="text-lg font-semibold">本日の授業内容</h3>
+                                            <p class="text-sm text-muted-foreground">
+                                                リアルタイムで更新される授業ノートがここに表示されます。
+                                                グループメンバーの書き込みも同時に確認できます。
+                                            </p>
+                                        </div>
+                                        <div class="space-y-4">
+                                            <div class="rounded-lg bg-muted p-4">
+                                                <div class="text-sm">授業ノート 1</div>
+                                            </div>
+                                            <div class="rounded-lg bg-muted p-4">
+                                                <div class="text-sm">授業ノート 2</div>
+                                            </div>
+                                            <div class="rounded-lg bg-muted p-4">
+                                                <div class="text-sm">授業ノート 3</div>
+                                            </div>
+                                            <div class="rounded-lg bg-muted p-4">
+                                                <div class="text-sm">授業ノート 4</div>
+                                            </div>
+                                            <div class="rounded-lg bg-muted p-4">
+                                                <div class="text-sm">授業ノート 5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content contribution" id="contribution">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title">貢献度とグループ活動</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="space-y-4">
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between">
+                                            <div class="space-y-1">
+                                                <p class="text-sm font-medium">全体の貢献度</p>
+                                                <p class="text-xs text-muted-foreground">今週の活動状況</p>
+                                            </div>
+                                            <span class="text-2xl font-bold">85%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid gap-4">
+                                        <div class="flex items-center gap-4">
+                                            <div class="avatar">
+                                                <img src="Borussia_Dortmund_logo.svg.png"alt="参加者" />
+                                            </div>
+                                            <div class="flex-1 space-y-1">
+                                                <p class="text-sm font-medium">ノート共有</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                            <span class="text-sm font-medium">75%</span>
+                                        </div>
+                                        <div class="flex items-center gap-4">
+                                            <div class="avatar">
+                                                <img src="FC-Bayern-Munchen-Logo-2017-present.webp" alt="参加者" />
+                                            </div>
+                                            <div class="flex-1 space-y-1">
+                                                <p class="text-sm font-medium">グループ討論</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width: 60%;"></div>
+                                                </div>
+                                            </div>
+                                            <span class="text-sm font-medium">60%</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">出席コード</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="space-y-4">
+                            <div class="rounded-lg bg-muted p-4">
+                                <div class="text-center text-2xl font-bold">6657</div>
+                                <p class="text-center text-sm text-muted-foreground">本日の出席コード</pp>
+                                     <p>85%以上で公開‼</p>
+                            </div>
+                            <input type="button" onclick="location.href='https://class.admin.tus.ac.jp/'" value="出席を記録する">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content chat" id="talk">
+                   
+                       
+                       
+                    </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">クイックアクセス</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="grid gap-2">
+                            <button class="button button-outline w-full justify-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                授業資料
+                            </button>
+                            <button class="button button-outline w-full justify-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                グループメンバー
+                            </button>
+                            <button class="button button-outline w-full justify-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                オンラインヘルプ
+                                
+                                        
+                                         
+                                       </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.getAttribute('data-tab');
+                    
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    tab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
